@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 public enum Items {
 
     SOUP(new BigDecimal("1.89"), "byCount"),
+    ICE_CREAM(new BigDecimal("1.49"),"byCount"),
     BANANA(new BigDecimal("0.69"), "byWeight"),
     GROUND_BEEF(new BigDecimal("3.99"), "byWeight");
 
