@@ -1,20 +1,22 @@
 package com.ordertotal.model;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Cart {
     private static Cart cart = new Cart();
 
-    public Map<Items,CheckoutDetail> itemsInCart;
+    public Map<Items,ScannedItemCheckoutDetail> itemsInCart;
+    public Map<Items,WeighedItemCheckoutDetail> weighedItemsInCart;
+    public List<Map> allItemsList;
 
-
-    private Cart(){
+    private Cart()
+    {
         itemsInCart = new HashMap();
+        weighedItemsInCart = new HashMap();
+        allItemsList = new ArrayList<>();
     }
 
     public static Cart getInstance(){
         return cart;
     }
-
 }

@@ -1,9 +1,11 @@
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\MarkdownController.java
+C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\WeighedItemCheckoutDetail.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\PriceController.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\ScanItemController.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\SpecialDealController.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\Application.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\Cart.java
-C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\ScanItemResponseBody.java
-C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\CheckoutDetail.java
+C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\ResponseEntity.java
+C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\ScannedItemCheckoutDetail.java
+C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\WeighedItemController.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\Items.java

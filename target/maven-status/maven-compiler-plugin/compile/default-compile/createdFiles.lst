@@ -1,9 +1,11 @@
 com\ordertotal\Application.class
 com\ordertotal\model\Items.class
+com\ordertotal\model\ScannedItemCheckoutDetail.class
+com\ordertotal\model\WeighedItemCheckoutDetail.class
 com\ordertotal\controllers\MarkdownController.class
 com\ordertotal\controllers\PriceController.class
-com\ordertotal\model\CheckoutDetail.class
-com\ordertotal\model\ScanItemResponseBody.class
+com\ordertotal\controllers\WeighedItemController.class
 com\ordertotal\controllers\ScanItemController.class
 com\ordertotal\model\Cart.class
+com\ordertotal\model\ResponseEntity.class
 com\ordertotal\controllers\SpecialDealController.class
