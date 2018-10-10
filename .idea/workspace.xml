@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4802bcf3-8e54-41ce-9a11-d80533e3f1ed" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByCount.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/WeighedItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByWeight.java" />
+      <change beforePath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar.original" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ordertotal/controllers/ScanItemController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ordertotal/controllers/WeighedItemController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,21 +24,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ScanItemController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java">
+      <file leaf-file-name="ScanItemByCount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="419">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeighedItemController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/WeighedItemController.java">
+      <file leaf-file-name="PriceCalculator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="405">
+              <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScanItemByWeight.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByWeight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,7 +117,7 @@
       <file leaf-file-name="WeighedItemCheckoutDetail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/WeighedItemCheckoutDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="392">
               <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
                 <element signature="e#389#390#0" expanded="true" />
@@ -117,16 +137,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarkdownController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/MarkdownController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -182,6 +192,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/model/ResponseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/WeighedItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByWeight.java" />
       </list>
     </option>
   </component>
@@ -270,6 +283,25 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ordertotal" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Checkoutordertotal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Checkoutordertotal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ordertotal" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Checkoutordertotal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Checkoutordertotal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ordertotal" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="PriceCalculator" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
@@ -439,12 +471,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538939666311</updated>
       <workItem from="1538939672403" duration="71033000" />
-      <workItem from="1539119665203" duration="12880000" />
+      <workItem from="1539119665203" duration="18316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83913000" />
+    <option name="totallyTimeSpent" value="89349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -500,7 +532,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByCount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -656,19 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/WeighedItemCheckoutDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/ResponseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -679,21 +698,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/WeighedItemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="419">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/WeighedItemCheckoutDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByWeight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="673">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
