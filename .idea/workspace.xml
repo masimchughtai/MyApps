@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4802bcf3-8e54-41ce-9a11-d80533e3f1ed" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownDeals.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownObject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownRequestEntity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownResponseEntity.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Checkoutordertotal.iml" afterPath="$PROJECT_DIR$/Checkoutordertotal.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/MarkdownController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/MarkdownController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordertotal/model/Items.java" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/model/Items.java" />
-      <change beforePath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/Checkoutordertotal-1.0-SNAPSHOT.jar.original" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ordertotal/controllers/MarkdownController.class" afterPath="$PROJECT_DIR$/target/classes/com/ordertotal/controllers/MarkdownController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ordertotal/controllers/ScanItemByWeight.class" afterPath="$PROJECT_DIR$/target/classes/com/ordertotal/controllers/ScanItemByWeight.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ordertotal/model/Items.class" afterPath="$PROJECT_DIR$/target/classes/com/ordertotal/model/Items.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ordertotal/service/PriceCalculator.class" afterPath="$PROJECT_DIR$/target/classes/com/ordertotal/service/PriceCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/Items.java">
+      <file leaf-file-name="PriceCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="753">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownDeals.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#333#334#0" expanded="true" />
@@ -71,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarkdownController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MarkdownController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/MarkdownController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
@@ -206,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/WeighedItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByWeight.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/model/Items.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/model/Markdown.java" />
@@ -216,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/MarkdownController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownDeals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java" />
       </list>
     </option>
   </component>
@@ -305,6 +289,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ordertotal" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Checkoutordertotal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Checkoutordertotal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ordertotal" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="MarkdownDeals" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Checkoutordertotal" type="b2602c69:ProjectViewProjectNode" />
@@ -493,12 +487,12 @@
       <updated>1538939666311</updated>
       <workItem from="1538939672403" duration="71033000" />
       <workItem from="1539119665203" duration="22253000" />
-      <workItem from="1539181062955" duration="12686000" />
+      <workItem from="1539181062955" duration="16478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105972000" />
+    <option name="totallyTimeSpent" value="109764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -521,7 +515,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37458193" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37458193" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24414715" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18976545" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -685,16 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/controllers/ScanItemByWeight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -788,7 +772,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/model/MarkdownDeals.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#333#334#0" expanded="true" />
@@ -806,6 +790,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ordertotal/service/PriceCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
