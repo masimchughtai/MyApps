@@ -30,8 +30,11 @@ public class ScanItemByWeight {
             WeighedItemCheckoutDetail currentWeightAndPriceOfWeightedItem = getCurrentWeightAndPriceOfWeightedItem(byWeightItem,cart);
             addByWeightItemToCurrentDetail(byWeightItem, currentWeightAndPriceOfWeightedItem, cart,weight);
         }else {
-            BigDecimal priceByWeight = (byWeightItem.price.multiply(new BigDecimal(Float.toString(weight)))).setScale(2, RoundingMode.CEILING);
-            WeighedItemCheckoutDetail weighedItemDetail = new WeighedItemCheckoutDetail(weight, priceByWeight);
+            PriceCalculator calculator1 = new PriceCalculator();
+            BigDecimal newPrice = calculator1.calculatePriceForItemByWeight(byWeightItem, weight);
+
+            //BigDecimal priceByWeight = (byWeightItem.price.multiply(new BigDecimal(Float.toString(weight)))).setScale(2, RoundingMode.CEILING);
+            WeighedItemCheckoutDetail weighedItemDetail = new WeighedItemCheckoutDetail(weight, newPrice);
             cart.weighedItemsInCart.put(byWeightItem, weighedItemDetail);
         }
 
