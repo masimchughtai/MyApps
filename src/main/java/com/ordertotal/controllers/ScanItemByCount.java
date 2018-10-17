@@ -41,8 +41,8 @@ public class ScanItemByCount {
         int newItemCount = currentCountOfThisScannedItem+1;
 
         PriceCalculator calculator = new PriceCalculator();
-        BigDecimal newPrice = calculator.calculatePriceForItemByCount(scannedItem, newItemCount);
-
+        //BigDecimal newPrice = calculator.calculatePriceForItemByCount(scannedItem, newItemCount);
+        BigDecimal newPrice = calculator.calculateItemPriceWithApplicableMarkdownAndDealsForItemByCount(scannedItem, newItemCount);
         ScannedItemCheckoutDetail newItemDetail = new ScannedItemCheckoutDetail(newItemCount, newPrice);
 
         cart.itemsInCart.put(scannedItem, newItemDetail);
