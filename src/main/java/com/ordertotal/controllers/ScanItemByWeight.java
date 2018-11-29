@@ -4,12 +4,10 @@ import com.ordertotal.model.Cart;
 import com.ordertotal.model.Items;
 import com.ordertotal.model.ResponseEntity;
 import com.ordertotal.model.WeighedItemCheckoutDetail;
-import com.ordertotal.service.PriceCalculator;
+import com.ordertotal.service.PriceCalculatorByWeight;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -30,7 +28,7 @@ public class ScanItemByWeight {
             WeighedItemCheckoutDetail currentWeightAndPriceOfWeightedItem = getCurrentWeightAndPriceOfWeightedItem(byWeightItem,cart);
             addByWeightItemToCurrentDetail(byWeightItem, currentWeightAndPriceOfWeightedItem, cart,weight);
         }else {
-            PriceCalculator calculator1 = new PriceCalculator();
+            PriceCalculatorByWeight calculator1 = new PriceCalculatorByWeight();
             BigDecimal newPrice = calculator1.calculatePriceForItemByWeight(byWeightItem, weight);
 
             //BigDecimal priceByWeight = (byWeightItem.price.multiply(new BigDecimal(Float.toString(weight)))).setScale(2, RoundingMode.CEILING);
@@ -38,14 +36,14 @@ public class ScanItemByWeight {
             cart.weighedItemsInCart.put(byWeightItem, weighedItemDetail);
         }
 
+        updateGrandTotal(cart);
         ResponseEntity response = new ResponseEntity();
         return response.getServiceResponse();
     }
 
 
     private WeighedItemCheckoutDetail getCurrentWeightAndPriceOfWeightedItem(Items byWeightItem, Cart cart){
-        WeighedItemCheckoutDetail currentWeighedItemDetail = cart.weighedItemsInCart.get(byWeightItem);
-        return currentWeighedItemDetail;
+        return cart.weighedItemsInCart.get(byWeightItem);
     }
 
     private void addByWeightItemToCurrentDetail(Items byWeightItem,
@@ -54,11 +52,26 @@ public class ScanItemByWeight {
     {
         float newWeight = currentWeightAndPriceOfWeightedItem.getWeight()+weight;
 
-        PriceCalculator calculator = new PriceCalculator();
+        PriceCalculatorByWeight calculator = new PriceCalculatorByWeight();
         BigDecimal newPrice = calculator.calculatePriceForItemByWeight(byWeightItem, newWeight);
         //BigDecimal newPrice = (byWeightItem.price.multiply(new BigDecimal(Float.toString(newWeight)))).setScale(2, RoundingMode.CEILING);
         WeighedItemCheckoutDetail newWeightedItemDetail = new WeighedItemCheckoutDetail(newWeight,newPrice);
         cart.weighedItemsInCart.put(byWeightItem,newWeightedItemDetail);
     }
+
+    private void updateGrandTotal(Cart cart){
+        BigDecimal grandTotal = new BigDecimal("0.00");
+
+        for(Items itemByCount : cart.itemsInCart.keySet()){
+            grandTotal = grandTotal.add(cart.itemsInCart.get(itemByCount).getTotalItemPrice());
+        }
+
+        for(Items itemByWeight : cart.weighedItemsInCart.keySet()){
+            grandTotal = grandTotal.add(cart.weighedItemsInCart.get(itemByWeight).getTotalWeighedItemPrice());
+        }
+
+        cart.gTotal.put("Grand Total: ", grandTotal);
+    }
+
 
 }

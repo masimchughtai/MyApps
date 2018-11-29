@@ -1,7 +1,7 @@
 package com.ordertotal.controllers;
 
 import com.ordertotal.model.*;
-import com.ordertotal.service.PriceCalculator;
+import com.ordertotal.service.PriceCalculatorForItemsByCount;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -16,12 +16,17 @@ public class ScanItemByCount {
         public List scanEachesItem(@PathVariable("item") Items scannedItem) {
         Cart cart = Cart.getInstance();
 
-        if (cartAlreadyHasTheItem(scannedItem, cart)){
-            addScannedItemToExistingScannedItemsMap(scannedItem,cart);
+        if (cart.allItemsList.size()==0){
+            cart.gTotal.put("Grand Total: ", new BigDecimal("0.00"));
         }
-        else{
-            addNewItemToCart(scannedItem, cart);
+
+        if (!cartAlreadyHasTheItem(scannedItem, cart)){
+            ScannedItemCheckoutDetail initialItemDetail = new ScannedItemCheckoutDetail(0,new BigDecimal(0));
+            cart.itemsInCart.put(scannedItem, initialItemDetail);
         }
+
+        addScannedItemToExistingScannedItemsMap(scannedItem,cart);
+        updateGrandTotal(cart);
 
         ResponseEntity response = new ResponseEntity();
         return response.getServiceResponse();
@@ -33,30 +38,36 @@ public class ScanItemByCount {
 
     private void addScannedItemToExistingScannedItemsMap(Items scannedItem, Cart cart) {
         int currentCountOfThisScannedItem = cart.itemsInCart.get(scannedItem).getNumberOfItems();
-        //BigDecimal currentTotalPriceOfThisScannedItem = cart.itemsInCart.get(scannedItem).getTotalItemPrice();
         updateItemCountAndPrice(scannedItem, currentCountOfThisScannedItem, cart);
+
+
     }
 
     private void updateItemCountAndPrice(Items scannedItem, int currentCountOfThisScannedItem, Cart cart){
         int newItemCount = currentCountOfThisScannedItem+1;
 
-        PriceCalculator calculator = new PriceCalculator();
-        //BigDecimal newPrice = calculator.calculatePriceForItemByCount(scannedItem, newItemCount);
-        BigDecimal newPrice = calculator.calculateItemPriceWithApplicableMarkdownAndDealsForItemByCount(scannedItem, newItemCount);
+        PriceCalculatorForItemsByCount calculator = new PriceCalculatorForItemsByCount();
+        BigDecimal newPrice = calculator.calculateTotalPriceForScannedItems(scannedItem, newItemCount);
         ScannedItemCheckoutDetail newItemDetail = new ScannedItemCheckoutDetail(newItemCount, newPrice);
 
         cart.itemsInCart.put(scannedItem, newItemDetail);
+
+
+
     }
 
-    private void addNewItemToCart(Items scannedItem, Cart cart) {
-        int itemCount = 1;
+    private void updateGrandTotal(Cart cart){
+        BigDecimal grandTotal = new BigDecimal("0.00");
 
-        PriceCalculator calculator = new PriceCalculator();
-        BigDecimal itemPrice = calculator.calculatePriceForItemByCount(scannedItem, itemCount);
+        for(Items itemByCount : cart.itemsInCart.keySet()){
+            grandTotal = grandTotal.add(cart.itemsInCart.get(itemByCount).getTotalItemPrice());
+        }
 
-        ScannedItemCheckoutDetail itemDetail = new ScannedItemCheckoutDetail(itemCount, itemPrice);
+        for(Items itemByWeight : cart.weighedItemsInCart.keySet()){
+            grandTotal = grandTotal.add(cart.weighedItemsInCart.get(itemByWeight).getTotalWeighedItemPrice());
+        }
 
-        cart.itemsInCart.put(scannedItem, itemDetail);
+        cart.gTotal.put("Grand Total: ", grandTotal);
     }
 
 }

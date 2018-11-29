@@ -11,12 +11,12 @@ public class ScannedItemCheckoutDetail {
         this.totalItemPrice = totalItemPrice;
     }
 
+
     public int getNumberOfItems() {
         return numberOfItems;
     }
 
     public BigDecimal getTotalItemPrice() {
         return totalItemPrice;
-
     }
 }

@@ -1,6 +1,7 @@
 com\ordertotal\controllers\ScanItemByCount.class
 com\ordertotal\model\Items.class
 com\ordertotal\model\ScannedItemCheckoutDetail.class
+com\ordertotal\service\PriceCalculatorForItemsByCount.class
 com\ordertotal\model\MarkdownDeals.class
 com\ordertotal\model\SpecialDeals.class
 com\ordertotal\model\Cart.class
@@ -12,7 +13,7 @@ com\ordertotal\controllers\ScanItemByWeight.class
 com\ordertotal\model\WeighedItemCheckoutDetail.class
 com\ordertotal\controllers\MarkdownController.class
 com\ordertotal\controllers\ViewExistingSpecialDeals.class
+com\ordertotal\service\PriceCalculatorByWeight.class
 com\ordertotal\model\MarkdownRequestEntity.class
-com\ordertotal\service\PriceCalculator.class
 com\ordertotal\model\MarkdownObject.class
 com\ordertotal\model\SpecialBuyMGetNOff.class

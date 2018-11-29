@@ -6,13 +6,14 @@ C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertot
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\ResponseEntity.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\ScannedItemCheckoutDetail.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\BuyMGetNOffController.java
-C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\service\PriceCalculator.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\SpecialDeals.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\Items.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\ViewExistingSpecialDeals.java
+C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\service\PriceCalculatorByWeight.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\WeighedItemCheckoutDetail.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\controllers\ScanItemByWeight.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\MarkdownDeals.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\Application.java
+C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\service\PriceCalculatorForItemsByCount.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\MarkdownObject.java
 C:\Users\MCHUGHT1\Documents\MyApps\Checkoutordertotal\src\main\java\com\ordertotal\model\SpecialBuyMGetNOff.java
